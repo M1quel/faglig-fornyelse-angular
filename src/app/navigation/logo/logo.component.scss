@@ -1,0 +1,23 @@
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .line {
+            height: 2px;
+            width: 20px;
+            display: block;
+            background-color: black;
+        }
+    }
+    .logoText {
+        font-size: 24px;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+
+    }
+}

@@ -1,0 +1,21 @@
+.navigationList {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .item {
+        color: #6C5CE7;
+        font-family: 'Inter', sans-serif;
+
+        &:first-child {
+            color: black;
+        }
+    }
+    .navigationDot {
+        height: 5px;
+        width: 5px;
+        display: block;
+        background-color: #FDCB6E;
+        border-radius: 50%;
+    }
+}

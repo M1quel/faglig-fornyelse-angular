@@ -1,0 +1,35 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+
+    .heading {
+
+        &__h1 {
+            font-size: 96px;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            .styledWord {
+                color: #E84393;
+                position: relative;
+                &:after {
+                    z-index: -1;
+                    left: -5px;
+                    bottom: 0;
+                    content: "";
+                    position: absolute;
+                    height: 50px;
+                    width: calc(100% + 10px);
+                    border-radius: 25px;
+                    background-color: #55EFC4;
+                    display: block;
+                }
+            }
+            .smaller {
+                font-size: 64px;
+            }
+        }
+    }
+}
