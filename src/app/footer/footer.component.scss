@@ -1,0 +1,86 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    padding: 70px 150px 20px 150px;
+    .footerHeading {
+        font-size: 12px;
+        font-family: "Inter", sans-serif;
+        font-weight: 900;
+        color: #ADADAD;
+        letter-spacing: 2.5px;
+    }
+    .socials {
+        height: 100%;
+        width: 100%;
+        .socialsWrapper {
+            display: flex;
+            gap: 20px;
+            img {
+                padding: 10px;
+                border-radius: 50%;
+                &:hover {
+                    background-color: #FFEAA7;
+                }
+
+            }
+        }
+    
+    }
+    .mail {
+        a {
+            color: #6C5CE7;
+            font-family: "Inter", sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: -.5px;
+        }
+    }
+    .information {
+        &Wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            margin-top: 10px;
+            a {
+                color: #2D3436;
+                font-family: "Inter", sans-serif;
+                font-size: 14px;
+                letter-spacing: .25px;
+            }
+        }
+    }
+    .message {
+        form {
+            margin-top: 10px;
+        }
+        .inputGroup {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        input {
+            background-color: #C2C2C2;
+            padding: 10px 15px;
+            border-radius: 5px;
+            &::placeholder {
+                color: black;
+                text-transform: capitalize;
+                font-family: "Inter", sans-serif;
+            }
+        }
+        textarea {
+            margin-top: 10px;
+            background-color: #C2C2C2;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 40px;
+            background-color: black;
+            color: white;
+            font-family: "Inter", sans-serif;
+            border-radius: 10px;
+        }
+    }
+}

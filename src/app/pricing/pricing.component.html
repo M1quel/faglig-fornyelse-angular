@@ -1,0 +1,54 @@
+<div class="pricingSection">
+    <h1 class="pricingHeading">Affordable pricing</h1>
+    <h3 class="pricingMode">Bill me <span>monthly</span> ¤ yearly</h3>
+    <div class="pricingCards">
+        <pricing-card 
+        [heading]="freeCard.heading" 
+        [price]="freeCard.price" 
+        [time]="freeCard.time"
+        [items]="freeCard.items"
+        [btnText]="freeCard.btnText"
+        ></pricing-card>
+        
+        <div class="bestPricingCard cardStyling">
+            <header class="header">
+                <div class="header__section">
+                    <p class="title">Individual</p>
+                    <span class="bestSpan">Best!</span>
+                </div>
+                <p class="price"><span>$24</span> / Month</p>
+            </header>
+            <section class="main">
+                <div class="item">
+                    <img src="https:via.placeholder.com/40.png" alt="">
+                    <p>Components-driven system</p>    
+                </div>
+                <div class="item">
+                    <img src="https:via.placeholder.com/40.png" alt="">
+                    <p>Sales-boosting landing pages</p>    
+                </div>
+                <div class="item">
+                    <img src="https:via.placeholder.com/40.png" alt="">
+                    <p>Awesome Feather icons pack</p>    
+                </div>
+                <div class="item">
+                    <img src="https:via.placeholder.com/40.png" alt="">
+                    <p>Themed into 3 different styles</p>    
+                </div>
+                <div class="item">
+                    <img src="https:via.placeholder.com/40.png" alt="">
+                    <p>Will help to learn figma</p>    
+                </div>
+
+            </section>
+        </div>
+        
+        <pricing-card 
+        [heading]="corporateCard.heading" 
+        [price]="corporateCard.price" 
+        [time]="corporateCard.time"
+        [items]="corporateCard.items"
+        [btnText]="corporateCard.btnText"
+        ></pricing-card>
+    </div>
+</div>

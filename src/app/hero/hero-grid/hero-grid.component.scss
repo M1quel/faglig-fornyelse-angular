@@ -1,0 +1,103 @@
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr) repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "text green green text2 text2" 
+    "yellow green green lightpurple blue"
+    "yellow pink purple purple orange"
+    "learn pink purple purple orange";
+    height: 90vh;
+    gap: 20px;
+    margin: 0 150px;
+    h2 {
+        font-size: 48px;
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+    }
+}
+.square {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.text {
+    grid-area: text;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 32px;
+}
+.yellowSquare {
+    grid-area: yellow;
+    background-color: #FDCB6E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    h4 {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+    }
+    p {
+        margin-top: 10px;
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+    }
+}
+.greenSquare {
+    grid-area: green;
+    background-color: #00B894;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.pinkSquare {
+    grid-area: pink;
+    background-color: #E84393;
+    height: 80%;
+}
+.lightPurpleSquare {
+    grid-area: lightpurple;
+    background-color: #A29BFE;
+}
+.purpleSquare {
+    grid-area: purple;
+    background-color: #6C5CE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.text2 {
+    grid-area: text2;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    margin: auto 0 0 0;
+    width: 90%;
+    line-height: 32px;
+}
+.learn {
+    grid-area: learn;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: #6C5CE7;
+    font-family: "Inter", sans-serif;
+    line-height: 48px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.orangeSquare {
+    grid-area: orange;
+    background-color: #FF7675;
+    height: 60%;
+}
+.blueSquare {
+    grid-area: blue;
+    background-color: #148BFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

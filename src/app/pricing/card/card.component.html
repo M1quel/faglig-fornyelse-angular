@@ -1,0 +1,18 @@
+<div class="pricingCard cardStyling">
+    <div>
+        <header class="header">
+            <div class="header__section">
+                <p class="title">{{heading}}</p>
+            </div>
+            <p class="price"><span>{{price}}</span> / {{time}}</p>
+        </header>
+        <section class="main">
+            <div class="item" *ngFor="let item of items">
+                <img src="https://via.placeholder.com/40.png" alt="">
+                <p>{{item}}</p>
+            </div>
+        </section>
+    </div>
+
+    <button class="pricingBtn">{{btnText}}</button>
+</div>
